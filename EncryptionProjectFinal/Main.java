@@ -9,23 +9,23 @@ class Main {
     String text = "daniel caesar is goated";
     
     //caesar cipher
-    print("\nCaesar Cipher:");
+    print("\nCaesar Cipher - '" + text + "':");
     print(caesar(text));
 
     //backwards
-    print("\nBackwards:");
+    print("\nBackwards - '" + text + "':");
     print(backwards(text));
 
     //turn into ascii
-    print("\nASCII:");
+    print("\nASCII - '" + text + "':");
     print(ascii(text));
 
     //substituting values w the symbol things
-    print("\nSubstitution:");
+    print("\nSubstitution - '" + text + "':");
     print(substitution(text));
 
     //put it all together
-    print("\nEverything together:");
+    print("\nEverything together - '" + text + "':");
     print(ascii(caesar(substitution(backwards(text)))));
     print("Without ASCII:");
     print(caesar(substitution(backwards(text))));
@@ -118,7 +118,7 @@ class Main {
     String build1 = "";
     int current = 0;
 
-    //un ascii AND vowel up (ts took too long)
+    //un ascii
     for (int i = 0; i < S.length(); i++){
         char ch = S.charAt(i);
 
@@ -126,30 +126,26 @@ class Main {
             build1 += (char)current;
             current = 0;
         }else{
-            current = (current * 10) + (ch - '0'); //this line took forever
+            current = (current * 10) + (ch - '0'); 
         }
     }
 
     build1 += (char) current;
 
-    //un backwards rq
+    //un backwards
     String build2 = "";
     for(int e = build1.length() - 1; e >= 0; e--){
         build2 += build1.charAt(e);
     }
 
-
-    int code = 8762;
-    char unicode = (char)code;
-
-
-   //un caesar and vowel the vowels
+   //un caesar
    String build3 = "";
     for(int w = 0; w < build2.length(); w++){
         char c = build2.charAt(w);
             build3 += (char)(c - 3);
     }
 
+    //symbols back to vowels
     String build4 = "";
       for(int t = 0; t < build3.length(); t++){
         if((int)build3.charAt(t) < 1000){
