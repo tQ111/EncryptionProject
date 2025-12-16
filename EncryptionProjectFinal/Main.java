@@ -71,32 +71,56 @@ class Main {
     String build = "";
     
     for(int i = 0; i < S.length(); i++){
-      if(S.charAt(i) == 'A' || S.charAt(i) == 'a'){
+      if(S.charAt(i) == 'A'){
         int code = 8761;
         char unicode = (char)code;
         build += unicode;
-      }else if(S.charAt(i) == 'E' || S.charAt(i) == 'e'){
+      }else if(S.charAt(i) == 'a'){
         int code = 8762;
         char unicode = (char)code;
         build += unicode;
-      }else if(S.charAt(i) == 'I' || S.charAt(i) == 'i'){
+      }else if(S.charAt(i) == 'E'){
         int code = 8763;
         char unicode = (char)code;
         build += unicode;
-      }else if(S.charAt(i) == 'O' || S.charAt(i) == 'o'){
+      }else if(S.charAt(i) == 'e'){
         int code = 8764;
         char unicode = (char)code;
         build += unicode;
-      }else if(S.charAt(i) == 'U' || S.charAt(i) == 'u'){
+      }else if(S.charAt(i) == 'I'){
         int code = 8765;
         char unicode = (char)code;
         build += unicode;
-      }else if(S.charAt(i) == 'Y' || S.charAt(i) == 'y'){
+      }else if(S.charAt(i) == 'i'){
         int code = 8766;
         char unicode = (char)code;
         build += unicode;
+      }else if(S.charAt(i) == 'O'){
+        int code = 8767;
+        char unicode = (char)code;
+        build += unicode;
+      }else if(S.charAt(i) == 'o'){
+        int code = 8768;
+        char unicode = (char)code;
+        build += unicode;
+      }else if(S.charAt(i) == 'U'){
+        int code = 8769;
+        char unicode = (char)code;
+        build += unicode;
+      }else if(S.charAt(i) == 'u'){
+        int code = 8770;
+        char unicode = (char)code;
+        build += unicode;
+      }else if(S.charAt(i) == 'Y'){
+        int code = 8771;
+        char unicode = (char)code;
+        build += unicode;
+      }else if(S.charAt(i) == 'y'){
+        int code = 8772;
+        char unicode = (char)code;
+        build += unicode;
       }else{
-        build += S.charAt(i);
+        build+= S.charAt(i);
       }
     }
 
@@ -155,15 +179,27 @@ class Main {
         }else if((int)build3.charAt(t) == 8761){
           build4 += 'A';
         }else if((int)build3.charAt(t) == 8762){
-          build4 += 'E';
+          build4 += 'a';
         }else if((int)build3.charAt(t) == 8763){
-          build4 += 'I';
+          build4 += 'E';
         }else if((int)build3.charAt(t) == 8764){
-          build4 += 'O';
+          build4 += 'e';
         }else if((int)build3.charAt(t) == 8765){
-          build4 += 'U';
+          build4 += 'I';
         }else if((int)build3.charAt(t) == 8766){
+          build4 += 'i';
+        }else if((int)build3.charAt(t) == 8767){
+          build4 += 'O';
+        }else if((int)build3.charAt(t) == 8768){
+          build4 += 'o';
+        }else if((int)build3.charAt(t) == 8769){
+          build4 += 'U';
+        }else if((int)build3.charAt(t) == 8770){
+          build4 += 'u';
+        }else if((int)build3.charAt(t) == 8771){
           build4 += 'Y';
+        }else if((int)build3.charAt(t) == 8772){
+          build4 += 'y';
         }else{
           build4 += "";
         }
